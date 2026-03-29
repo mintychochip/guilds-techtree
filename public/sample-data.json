@@ -1,0 +1,146 @@
+{
+  "nodes": {
+    "infrastructure_1": {
+      "id": "infrastructure_1",
+      "name": "Stone Roads",
+      "branch": "INFRASTRUCTURE",
+      "cost": 5,
+      "positionX": 0,
+      "positionY": 0,
+      "description": "Unlock stone road building materials for town infrastructure.",
+      "prerequisites": [],
+      "status": "locked"
+    },
+    "infrastructure_2": {
+      "id": "infrastructure_2",
+      "name": "Iron Rails",
+      "branch": "INFRASTRUCTURE",
+      "cost": 10,
+      "positionX": 0,
+      "positionY": 1,
+      "description": "Build rail systems connecting town districts.",
+      "prerequisites": ["infrastructure_1"],
+      "status": "locked"
+    },
+    "infrastructure_3": {
+      "id": "infrastructure_3",
+      "name": "Redstone Circuits",
+      "branch": "INFRASTRUCTURE",
+      "cost": 20,
+      "positionX": 0,
+      "positionY": 2,
+      "description": "Automated redstone systems for town buildings.",
+      "prerequisites": ["infrastructure_2"],
+      "status": "locked"
+    },
+    "defense_1": {
+      "id": "defense_1",
+      "name": "Watchtowers",
+      "branch": "DEFENSE",
+      "cost": 5,
+      "positionX": 0,
+      "positionY": 0,
+      "description": "Construct watchtowers at town borders.",
+      "prerequisites": [],
+      "status": "locked"
+    },
+    "defense_2": {
+      "id": "defense_2",
+      "name": "Fortifications",
+      "branch": "DEFENSE",
+      "cost": 10,
+      "positionX": 0,
+      "positionY": 1,
+      "description": "Reinforced walls and gates for town perimeter.",
+      "prerequisites": ["defense_1"],
+      "status": "locked"
+    },
+    "defense_3": {
+      "id": "defense_3",
+      "name": "Siege Engines",
+      "branch": "DEFENSE",
+      "cost": 20,
+      "positionX": 0,
+      "positionY": 2,
+      "description": "Advanced defensive mechanisms and traps.",
+      "prerequisites": ["defense_2"],
+      "status": "locked"
+    },
+    "commerce_1": {
+      "id": "commerce_1",
+      "name": "Market Stalls",
+      "branch": "COMMERCE",
+      "cost": 5,
+      "positionX": 0,
+      "positionY": 0,
+      "description": "Set up marketplace stalls for player trading.",
+      "prerequisites": [],
+      "status": "locked"
+    },
+    "commerce_2": {
+      "id": "commerce_2",
+      "name": "Trade Routes",
+      "branch": "COMMERCE",
+      "cost": 10,
+      "positionX": 0,
+      "positionY": 1,
+      "description": "Establish trade routes with other towns.",
+      "prerequisites": ["commerce_1"],
+      "status": "locked"
+    },
+    "commerce_3": {
+      "id": "commerce_3",
+      "name": "Banking",
+      "branch": "COMMERCE",
+      "cost": 20,
+      "positionX": 0,
+      "positionY": 2,
+      "description": "Town bank with loans and interest systems.",
+      "prerequisites": ["commerce_2"],
+      "status": "locked"
+    },
+    "culture_1": {
+      "id": "culture_1",
+      "name": "Library",
+      "branch": "CULTURE",
+      "cost": 5,
+      "positionX": 0,
+      "positionY": 0,
+      "description": "Build a library for enchanting knowledge.",
+      "prerequisites": [],
+      "status": "locked"
+    },
+    "culture_2": {
+      "id": "culture_2",
+      "name": "Arena",
+      "branch": "CULTURE",
+      "cost": 10,
+      "positionX": 0,
+      "positionY": 1,
+      "description": "Construct an arena for town events.",
+      "prerequisites": ["culture_1"],
+      "status": "locked"
+    },
+    "culture_3": {
+      "id": "culture_3",
+      "name": "Monument",
+      "branch": "CULTURE",
+      "cost": 20,
+      "positionX": 0,
+      "positionY": 2,
+      "description": "Build a grand monument boosting town morale.",
+      "prerequisites": ["culture_2"],
+      "status": "locked"
+    }
+  },
+  "edges": [
+    {"from": "infrastructure_1", "to": "infrastructure_2"},
+    {"from": "infrastructure_2", "to": "infrastructure_3"},
+    {"from": "defense_1", "to": "defense_2"},
+    {"from": "defense_2", "to": "defense_3"},
+    {"from": "commerce_1", "to": "commerce_2"},
+    {"from": "commerce_2", "to": "commerce_3"},
+    {"from": "culture_1", "to": "culture_2"},
+    {"from": "culture_2", "to": "culture_3"}
+  ]
+}

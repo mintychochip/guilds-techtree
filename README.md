@@ -9,28 +9,28 @@
 </p>
 
 <p align="center">
-  <strong>🌳 Interactive Web-Based Tech Tree for the Guilds Minecraft Plugin</strong>
+  <strong>Interactive Web-Based Tech Tree for the Guilds Minecraft Plugin</strong>
 </p>
 
 <p align="center">
-  <a href="https://guilds-techtree.vercel.app">🌐 Live Demo</a> •
-  <a href="https://github.com/mintychochip/guilds">🔗 Plugin Repo</a>
+  <a href="https://guilds-techtree.vercel.app">Live Demo</a> •
+  <a href="https://github.com/mintychochip/guilds">Plugin Repo</a>
 </p>
 
 ---
 
-## ✨ Features
+## Features
 
-- **🌐 Web-Based Interface** — No client mod required, works in any browser
-- **🔒 Secure Sessions** — UUID-based magic links with configurable timeouts
-- **📡 Real-Time Sync** — WebSocket connection to Minecraft server for live updates
-- **🎯 Interactive Graph** — Visual node tree powered by Cytoscape.js
-- **⚡ Instant Apply** — Unlock tech tree nodes directly from the web interface
-- **🎨 Modern UI** — Built with Next.js 16 and Tailwind CSS
+- **Web-Based Interface** — No client mod required, works in any browser
+- **Secure Sessions** — UUID-based magic links with configurable timeouts
+- **Real-Time Sync** — WebSocket connection to Minecraft server for live updates
+- **Interactive Graph** — Visual node tree powered by Cytoscape.js
+- **Instant Apply** — Unlock tech tree nodes directly from the web interface
+- **Modern UI** — Built with Next.js 16 and Tailwind CSS
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|------------|
@@ -44,7 +44,7 @@
 
 ---
 
-## 🎮 How It Works
+## How It Works
 
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
@@ -70,7 +70,7 @@
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -102,7 +102,7 @@ open http://localhost:3000/s/demo?host=localhost:8080
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 guilds-techtree/
@@ -121,7 +121,7 @@ guilds-techtree/
 
 ---
 
-## 🔌 WebSocket API
+## WebSocket API
 
 The frontend communicates with the Guilds plugin via WebSocket:
 
@@ -134,7 +134,7 @@ The frontend communicates with the Guilds plugin via WebSocket:
 
 ---
 
-## 🚢 Deployment
+## Deployment
 
 Automatically deployed to Vercel on every push to `main`:
 
@@ -147,7 +147,7 @@ vercel --prod
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Please follow the existing code style.
 
@@ -158,12 +158,12 @@ Contributions welcome! Please follow the existing code style.
 
 ---
 
-## 📄 License
+## License
 
 MIT License
 
 ---
 
 <p align="center">
-  Built for the Guilds Minecraft community 🎮
+  Built for the Guilds Minecraft community
 </p>
